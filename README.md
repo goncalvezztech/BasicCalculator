@@ -27,6 +27,4 @@ Uma calculadora simples desenvolvida com HTML, CSS e JavaScript puro, com suport
   <img src="preview.png" width="350">
 </p>
 
-## 🚀 Clique para visualizar o projeto
-
-[👉 Clique aqui para visualizar o projeto](file:///C:/Users/Usu%C3%A1rio/OneDrive/Desktop/Calculadora/index.html)
+[👉 Clique aqui para visualizar o projeto](https://goncalveztech.github.io/BasicCalculator/)
