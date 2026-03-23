@@ -27,4 +27,4 @@ Uma calculadora simples desenvolvida com HTML, CSS e JavaScript puro, com suport
   <img src="preview.png" width="350">
 </p>
 
-[👉 Clique aqui para visualizar o projeto](https://goncalveztech.github.io/BasicCalculator/)
+[👉 Clique aqui para visualizar o projeto](https://github.com/goncalvezztech/BasicCalculator)
