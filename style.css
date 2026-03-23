@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --cor-fundo: #f0e6ff;
+  --cor-branco: #ffffff;
+  --cor-borda: #222222;
+  --cor-texto: #222222;
+  --cor-visor-fundo: #e8ffe8;
+  --cor-visor-texto: #1a1a1a;
+  --cor-btn-padrao: #f7f7f7;
+  --cor-btn-operacao: #ffb347;
+  --cor-btn-igual: #77dd77;
+  --cor-btn-limpar: #ff6b6b;
+  --cor-btn-apagar: #ffd1dc;
+  --fonte-principal: 'Courier Prime', monospace;
+  --borda-raio: 4px;
+  --sombra: 3px 3px 0px #222222; 
+}
+body{
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--fonte-principal);
+}
+.calculadora {
+    background-color: var(--cor-branco);
+    border: 3px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 6px 6px 0px var(--cor-borda);
+}
+h1 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#visor {
+    width: 100%;
+    background-color: var(--cor-visor-fundo);
+    border: 2px solid var(--cor-borda);
+    border-radius: var(--borda-raio);
+    padding: 10px 14px;
+    font-size: 28px;
+    text-align: right;
+    margin-bottom: 16px;
+    min-height: 56px;
+    word-break: break-all;
+    outline: none;
+    caret-color: transparent;
+    user-select: none;
+}
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+button {
+    padding: 14px 0;
+    font-size: 18px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    border: 2px solid var(--cor-borda);
+    border-radius: var(--borda-raio);
+    cursor: pointer;
+    background-color: var(--cor-btn-padrao);
+    color: var(--cor-texto);
+    transition: transform 0.08s, box-shadow 0.08s;
+    box-shadow: var(--sombra);
+}
+button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px var(--cor-borda);
+}
+.btn-operacao {
+    background-color: var(--cor-btn-operacao);
+}
+.btn-igual{
+    background-color: var(--cor-btn-igual);
+    grid-column: span 2;
+}
+.btn-limpar {
+    background-color: var(--cor-btn-limpar);
+    color: var(--cor-branco);
+}
+.btn-apagar {
+    background-color: var(--cor-btn-apagar);
+}
+.btn-zero {
+    grid-column: span 2;
+}
+button:hover {
+    filter: brightness(0.95);
+}
